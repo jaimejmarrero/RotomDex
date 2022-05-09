@@ -1,0 +1,98 @@
+body {
+    background-color: floralwhite;
+    color: white;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    color: blue;
+}
+
+.container {
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+
+}
+
+.card {
+    list-style: none;
+    padding: 5px;
+    background-color: whitesmoke;
+    color: #222;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 125px;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.topnav ul {
+    display: inline;
+}
+.topnav a {
+    color: darkkhaki;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: rgba(218, 165, 32, 0.3);
+}
+.main-header {
+    text-align: center;
+    background-image: url("./pokeballHeader.png");
+    background-size: contain;
+    overflow: hidden;
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.3);
+}
+.main-title{
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    color: #0303ff;
+    padding-top: 80px;
+}

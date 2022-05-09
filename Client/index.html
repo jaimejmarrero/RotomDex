@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Rotom Dex</title>
+    <script>
+        function validate() {
+            let input_text = document.getElementById("nameP");
+            const inputType = ["Water", "Fire", "Grass", "Dark", "Fairy", "Rock", "Ground", "Steel", "Ice", "Dragon", "Poison", "Flying", "Electric", "Psychic", "Ghost", "Fighting", "Normal"];
+            if (input_text.value === "") {
+                alert("Please try searching Fire, Water, Grass...");
+                return false;
+            }
+            if(! inputType.some(type => type.toLowerCase() === input_text.value.toLowerCase())) {
+                alert("Please try searching Fire, Water, Grass...");
+                return false;
+            }
+            
+            alert("Pokemon of type " + input_text.value + " are shown!");
+            return true;
+        }
+    </script>
+    <link rel="stylesheet" href="./site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="main-header">
+        <nav class="topnav">
+            <ul><a class="active" href="index.html">Home</a></ul>
+            <ul><a href="Pokedex.html">Pokedex</a></ul>
+            <ul> <a href="Trainers.html">Trainers</a></ul>
+            <ul><a href="PC.html">Pokemon PC</a></ul>
+        </nav>
+        <h1 class="main-title">Rotom Dex</h1>
+    </header>
+
+    <div class="main-body">
+    <div class="content-section first-section">
+        <form id="getPokemonAPI">
+            <label>Find a Pokemon!</label> <br>
+            <input name="name" class="text-input" id="name" type="text" placeholder="Find a Pokemon!">
+            <button type="submit" id="searchPokemon">Start Pokedex Search </button>
+        </form>
+    </div>
+
+    <div class="content-section second-section">
+        <form action="get-type" method="get" onsubmit="return validate()">
+            <label>Browse Pokemon by Type</label> <br>
+            <input name="type" class="text-input" id="nameP" type="text" placeholder="Choose a Type">
+            <button type="submit" id="searchByType">Start Pokedex Search by Type</button>
+        </form>
+    </div>
+    <div class="result" id="pokemon">
+        <p class="searchRes">Search Results</p>
+        <p id="displayName"></p>
+        <p id="displayType"></p>
+
+<script type="text/javascript" src="index.js"></script>
+    <script src="./app.js"></script>
+
+
+<label class="element-label">Bulbasaur</label><p class="element-p">Grass, Poison</p><label class="element-label">Ivysaur</label><p class="element-p">Grass, Poison</p><label class="element-label">Venusaur</label><p class="element-p">Grass, Poison</p><label class="element-label">Weedle</label><p class="element-p">Bug, Poison</p><label class="element-label">Kakuna</label><p class="element-p">Bug, Poison</p><label class="element-label">Beedrill</label><p class="element-p">Bug, Poison</p><label class="element-label">Ekans</label><p class="element-p">Poison</p><label class="element-label">Arbok</label><p class="element-p">Poison</p><label class="element-label">Nidoran♀</label><p class="element-p">Poison</p><label class="element-label">Nidorina</label><p class="element-p">Poison</p><label class="element-label">Nidoqueen</label><p class="element-p">Poison, Ground</p><label class="element-label">Nidoran♂</label><p class="element-p">Poison</p><label class="element-label">Nidorino</label><p class="element-p">Poison</p><label class="element-label">Nidoking</label><p class="element-p">Poison, Ground</p><label class="element-label">Zubat</label><p class="element-p">Poison, Flying</p><label class="element-label">Golbat</label><p class="element-p">Poison, Flying</p><label class="element-label">Oddish</label><p class="element-p">Grass, Poison</p><label class="element-label">Gloom</label><p class="element-p">Grass, Poison</p><label class="element-label">Vileplume</label><p class="element-p">Grass, Poison</p><label class="element-label">Venonat</label><p class="element-p">Bug, Poison</p><label class="element-label">Venomoth</label><p class="element-p">Bug, Poison</p><label class="element-label">Bellsprout</label><p class="element-p">Grass, Poison</p><label class="element-label">Weepinbell</label><p class="element-p">Grass, Poison</p><label class="element-label">Victreebel</label><p class="element-p">Grass, Poison</p><label class="element-label">Tentacool</label><p class="element-p">Water, Poison</p><label class="element-label">Tentacruel</label><p class="element-p">Water, Poison</p><label class="element-label">Grimer</label><p class="element-p">Poison</p><label class="element-label">Muk</label><p class="element-p">Poison</p><label class="element-label">Gastly</label><p class="element-p">Ghost, Poison</p><label class="element-label">Haunter</label><p class="element-p">Ghost, Poison</p><label class="element-label">Gengar</label><p class="element-p">Ghost, Poison</p><label class="element-label">Koffing</label><p class="element-p">Poison</p><label class="element-label">Weezing</label><p class="element-p">Poison</p><label class="element-label">Spinarak</label><p class="element-p">Bug, Poison</p><label class="element-label">Ariados</label><p class="element-p">Bug, Poison</p><label class="element-label">Crobat</label><p class="element-p">Poison, Flying</p><label class="element-label">Qwilfish</label><p class="element-p">Water, Poison</p><label class="element-label">Dustox</label><p class="element-p">Bug, Poison</p><label class="element-label">Roselia</label><p class="element-p">Grass, Poison</p><label class="element-label">Gulpin</label><p class="element-p">Poison</p><label class="element-label">Swalot</label><p class="element-p">Poison</p><label class="element-label">Seviper</label><p class="element-p">Poison</p><label class="element-label">Budew</label><p class="element-p">Grass, Poison</p><label class="element-label">Roserade</label><p class="element-p">Grass, Poison</p><label class="element-label">Stunky</label><p class="element-p">Poison, Dark</p><label class="element-label">Skuntank</label><p class="element-p">Poison, Dark</p><label class="element-label">Skorupi</label><p class="element-p">Poison, Bug</p><label class="element-label">Drapion</label><p class="element-p">Poison, Dark</p><label class="element-label">Croagunk</label><p class="element-p">Poison, Fighting</p><label class="element-label">Toxicroak</label><p class="element-p">Poison, Fighting</p><label class="element-label">Venipede</label><p class="element-p">Bug, Poison</p><label class="element-label">Whirlipede</label><p class="element-p">Bug, Poison</p><label class="element-label">Scolipede</label><p class="element-p">Bug, Poison</p><label class="element-label">Trubbish</label><p class="element-p">Poison</p><label class="element-label">Garbodor</label><p class="element-p">Poison</p><label class="element-label">Foongus</label><p class="element-p">Grass, Poison</p><label class="element-label">Amoonguss</label><p class="element-p">Grass, Poison</p><label class="element-label">Skrelp</label><p class="element-p">Poison, Water</p><label class="element-label">Dragalge</label><p class="element-p">Poison, Dragon</p><label class="element-label">Mareanie</label><p class="element-p">Poison, Water</p><label class="element-label">Toxapex</label><p class="element-p">Poison, Water</p><label class="element-label">Salandit</label><p class="element-p">Poison, Fire</p><label class="element-label">Salazzle</label><p class="element-p">Poison, Fire</p><label class="element-label">Nihilego</label><p class="element-p">Rock, Poison</p><label class="element-label">Poipole</label><p class="element-p">Poison</p><label class="element-label">Naganadel</label><p class="element-p">Poison, Dragon</p></div></div></body></html>

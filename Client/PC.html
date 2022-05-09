@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PC</title>
+    <script>
+        function validate() {
+            let input_text = document.getElementById("newUsername");
+            let input_password = document.getElementById("newPassword");
+            if (input_text.value === "" ) {
+                alert("Please enter your name!");
+                return false;
+            }
+            if (input_password.value == "") {
+                alert("Please enter a password!");
+                return false;
+            }
+            alert("Welcome " + input_text.value + "! You can now log in.");
+            return true;
+        }
+    </script>
+    <link rel="stylesheet" href="./site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+    <nav class="topnav">
+        <ul><a class="active" href="index.html">Home</a></ul>
+        <ul><a href="Pokedex.html">Pokedex</a></ul>
+        <ul> <a href="Trainers.html">Trainers</a></ul>
+        <ul><a href="PC.html">Pokemon PC</a></ul>
+    </nav>
+    <h1 class="main-title">Pokemon PC</h1>
+</header>
+
+<article class="center">
+
+<form id="image" action="/login" method="POST">
+    <div class="container">
+        <label for="name"><b>Trainer</b></label>
+        <input id="name" type="text" placeholder="Enter Trainer Name" name="trainerName" required>
+        <label for="password"><b>Password</b></label>
+        <input id="password" type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <button type="button" class="cancelbtn">Cancel</button>
+            <br>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </label>
+
+    </div>
+</form>
+
+<form id="signup-form" action="/sign-up" method="POST" onsubmit="return validate()">
+    <div class="container">
+        <label for="newUsername"><b>New Trainer Registration</b></label>
+        <input id="newUsername" type="text" placeholder="Enter Trainer Name" name="newUsername" required>
+        <label for="newPassword"><b>Password</b></label>
+        <input id="newPassword" type="password" placeholder="Enter Password" name="newPassword" required>
+
+        <button type="submit">Register to PC</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+</form>
+
+</article>
+
+<script src="./serverRegistration.js"></script>
+</body>
+</html>

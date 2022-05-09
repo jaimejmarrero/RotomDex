@@ -1,0 +1,210 @@
+.main-body {
+    background-image: url("./rotomWallpaper.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: orange;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    font-family: 'Roboto Slab', serif;
+    background-color: floralwhite;
+}
+
+.topnav ul {
+    display: inline;
+}
+.topnav a {
+    color: darkkhaki;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: rgba(218, 165, 32, 0.3);
+}
+.main-header {
+    text-align: center;
+    background-image: url("./pokeballHeader.png");
+    background-size: contain;
+    overflow: hidden;
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.3);
+    font-family: 'Roboto Slab', serif;
+}
+.main-title{
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    color: #0303ff;
+    padding-top: 80px;
+}
+
+html {
+    box-sizing:border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust:100%;
+    margin: 0;
+    background-color: floralwhite;
+}
+
+form {
+    border: whitesmoke;
+}
+
+.content-section{
+    margin: 3em;
+    outline: 2px gold;
+
+}
+.searchRes {
+    color: yellow ;
+    font-size: larger;
+    font-weight: bold;
+}
+
+div {
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 300px;
+    font-family: 'Roboto Slab', serif;
+    border: 15px solid gold;
+    padding: 50px;
+    margin: 10px;
+    color: gold;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.second-section{
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.first-section {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.result {
+    overflow-y:auto;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 42px;
+}
+#collection{
+    overflow-y:auto;
+    max-height: 150px;
+    max-width: 300px;
+}
+
+.center {
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+}
+
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+#welcome-message {
+    color: red;
+    max-height: 150px;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: center;
+    padding-top: 16px;
+}
+
+#displayName, .element-label, .collection-label {
+    color:blue;
+    font-family: 'Roboto Slab', serif;
+    font-size: larger;
+    font-weight: bold;
+    max-height: 250px;
+    overflow-y:auto;
+}
+
+
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+

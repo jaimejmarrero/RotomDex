@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Trainers</title>
+    <link rel="stylesheet" href="./site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="main-header">
+    <nav class="topnav">
+        <ul><a class="active" href="index.html">Home</a></ul>
+        <ul><a href="Pokedex.html">Pokedex</a></ul>
+        <ul> <a href="Trainers.html">Trainers</a></ul>
+        <ul><a href="PC.html">Pokemon PC</a></ul>
+    </nav>
+    <h1 class="main-title">Pokemon Trainers</h1>
+</header>
+<article class="columns">
+        <div id="welcome-message">
+
+    
+        <p></p><p></p><p></p><p></p><h1 class="welcome-name">Welcome Brock!</h1><h1 class="welcome-h">Deleted Voltorb Successfully!</h1></div>
+            <form action="/get-collection" method="get" class="myPokemon">
+            </form>
+        <div id="collection">
+
+    <label class="collection-label">Mewtwo</label><p class="collection-p">Pyschic</p><label class="collection-label">Pikachu</label><p class="collection-p">electric</p><label class="collection-label">Eevee</label><p class="collection-p">Normal</p><label class="collection-label">Braviary</label><p class="collection-p">Flying</p><label class="collection-label">Gengar</label><p class="collection-p">Ghost</p></div>
+</article>
+
+
+<article class="columns">
+    <div>
+        <form id="addPokemons" action="/add-pokemon" method="post">
+            <label>Add a Pokemon to your Collection!</label> <br>
+            <input name="pokemonName" class="text-input" id="pokemonName" type="text" placeholder="Enter Pokemon Name!">
+            <input name="pokemonType" class="text-input" id="pokemonType" type="text" placeholder="Enter Pokemon Type!">
+            <button type="submit" id="addPokemon">Add Pokemon </button>
+        </form>
+    </div>
+    <div>
+        <form action="/delete-pokemon" method="post">
+            <label>Release a Pokemon from your Collection!</label> <br>
+            <input name="pokemonName" class="text-input" id="pokemonName" type="text" placeholder="Enter Pokemon Name!">
+            <input name="pokemonType" class="text-input" id="pokemonType" type="text" placeholder="Enter Pokemon Type!">
+            <button type="submit" id="addPokemon">Delete Pokemon</button>
+        </form>
+    </div>
+</article>
+
+<article class="columns">
+    <div class="display-pokemon">
+        <form action="/get-collection" method="get" class="myPokemon">
+            <label>Display your collection!</label> <br>
+            <button type="submit" id="get-collection">Display</button>
+        </form>
+    </div>
+</article>
+
+</body></html>
